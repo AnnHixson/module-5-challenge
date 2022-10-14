@@ -10,6 +10,15 @@ function displayTime() {
 
 
 
+
+
+
+
+
+
+
+  
+
 //   for each card
 // if moment > hour
 // input background color:gray

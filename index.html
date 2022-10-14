@@ -28,32 +28,72 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container mw-100 mb-5">
       <!-- Timeblocks go here -->
-      <div class="card">
-        <div class="card-body row align-items-center">
-          <h2 class="card-title col-3">9AM</h2>
-          <form class="card-text col-7">
-            <input type="text">
-          </form>
-          <button class="btn btn-info col-2">💾</button>
-        </div>
+      <div class="card ml-1 row col-12 time-block" id="9">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>9AM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save9">💾</button>
+        </form>
       </div>
-      <!-- <div class="card">
-        <div class="row">
-          <h2 class="col-2">9AM-5pm</h2>
-          <div class="col">
-            <form class="col">
-              <div class="form-group col-2">
-                <label for="event"></label>
-                <input type="text" class="form-control" id="eventInput">
-              </div>
-            </form>
-            <button type="button" class="btn btn-info col-2">💾</button>
-          </div>
-        </div>
+      <div class="card ml-1 row col-12 time-block" id="10">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>10AM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save10">💾</button>
+        </form>
       </div>
-    </div> -->
+      <div class="card ml-1 row col-12 time-block" id="11">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>11AM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save11">💾</button>
+        </form>
+      </div>
+      <div class="card ml-1 row col-12 time-block" id="12">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>12PM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save12">💾</button>
+        </form>
+      </div>
+      <div class="card ml-1 row col-12 time-block" id="13">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>1PM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save13">💾</button>
+        </form>
+      </div>
+      <div class="card ml-1 row col-12 time-block" id="14">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>2PM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save14">💾</button>
+        </form>
+      </div>
+      <div class="card ml-1 row col-12 time-block" id="15">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>3PM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save15">💾</button>
+        </form>
+      </div>
+      <div class="card ml-1 row col-12 time-block" id="16">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>4PM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save16">💾</button>
+        </form>
+      </div>
+      <div class="card ml-1 row col-12 time-block" id="17">
+        <form class="row">
+          <label for="events" class="col-2 card-header hour"><h2>5PM</h2></label>
+          <textarea name="events" class="col-8 card-body description" id="events"></textarea>
+          <button class="btn btn-info col-2 saveBtn" type="submit" id="save17">💾</button>
+        </form>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
