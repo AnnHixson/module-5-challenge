@@ -64,6 +64,7 @@ function blockColor() {
   var currentHour = moment().format('k');
   for (var i = 0; i < times.length; i++) {
     if (times[i] > currentHour) {
+      timeBlocks[i].removeClass('past');
       timeBlocks[i].addClass('future');
     } else if (times[i] < currentHour) {
       timeBlocks[i].removeClass('present');
