@@ -10,9 +10,9 @@ N/A
 
 ## Usage
 
-The current date is displayed in the jumbotron at the top and includes the day of the week, the month, and the date. Currently, this updates when the page is refreshed.
+The current date is displayed in the jumbotron at the top and includes the day of the week, the month, and the date. Currently, this updates every second.
 
-The time blocks are color co-ordinated. Hours in the past have a gray background. Hours in the future have a green background. The current hour has a red background. Currently, this updates when the page is refreshed.
+The time blocks are color co-ordinated. Hours in the past have a gray background. Hours in the future have a green background. The current hour has a red background. Currently, this updates every second.
 
 The user can click into the text area of the hour they desire to add an event to and type in whatever event they have to schedule. When they click on the save button, the information they have added is saved to local storage, so that the information persists when the page is refreshed or navigated away from. When the page loads, the saved information is displayed in the appropriate time block.
 

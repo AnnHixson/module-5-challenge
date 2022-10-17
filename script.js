@@ -61,25 +61,16 @@ function displayEvents() {
 
 // Color code the time blocks
 function blockColor() {
-  // commented out for testing purposes only
-  // var currentHour = moment().format('k');
-  // for testing purposes only
-  var currentHour = moment().format('s');
-  // for testing purposes only
-  // console.log("a")
+  var currentHour = moment().format('k');
   for (var i = 0; i < times.length; i++) {
     if (times[i] > currentHour) {
       timeBlocks[i].addClass('future');
-      // for testing purposes only
-      // console.log("b")
     } else if (times[i] < currentHour) {
+      timeBlocks[i].removeClass('present');
       timeBlocks[i].addClass('past');
-      // for testing purposes only
-      // console.log("c")
     } else if (times[i] == currentHour) {
+      timeBlocks[i].removeClass('future');
       timeBlocks[i].addClass('present');
-      // for testing purposes only
-      // console.log("d")
     }
   }
 }
@@ -151,14 +142,9 @@ form16.on('submit', storeEvent16);
 form17.on('submit', storeEvent17);
 
 
-// testing
+// Color code the time blocks in real time
 setInterval(blockColor, 1000);
-
-
-
-
-// Displays the current date every second
+// Display the current date in real time
 setInterval(displayDate, 1000);
-
 // Call initial page loadout when page is opened
 init();
