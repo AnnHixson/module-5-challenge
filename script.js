@@ -2,7 +2,7 @@
 
 // Time Variables
 var timeDisplayEl = $('#currentDay');
-var currentHour = moment().format('k');
+
 
 // Event Variables
 var form9 = $('#form9');
@@ -61,13 +61,25 @@ function displayEvents() {
 
 // Color code the time blocks
 function blockColor() {
+  // commented out for testing purposes only
+  // var currentHour = moment().format('k');
+  // for testing purposes only
+  var currentHour = moment().format('s');
+  // for testing purposes only
+  // console.log("a")
   for (var i = 0; i < times.length; i++) {
     if (times[i] > currentHour) {
       timeBlocks[i].addClass('future');
+      // for testing purposes only
+      // console.log("b")
     } else if (times[i] < currentHour) {
       timeBlocks[i].addClass('past');
+      // for testing purposes only
+      // console.log("c")
     } else if (times[i] == currentHour) {
       timeBlocks[i].addClass('present');
+      // for testing purposes only
+      // console.log("d")
     }
   }
 }
@@ -138,6 +150,15 @@ form15.on('submit', storeEvent15);
 form16.on('submit', storeEvent16);
 form17.on('submit', storeEvent17);
 
+
+// testing
+setInterval(blockColor, 1000);
+
+
+
+
+// Displays the current date every second
+setInterval(displayDate, 1000);
 
 // Call initial page loadout when page is opened
 init();

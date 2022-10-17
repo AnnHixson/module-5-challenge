@@ -16,7 +16,7 @@ The time blocks are color co-ordinated. Hours in the past have a gray background
 
 The user can click into the text area of the hour they desire to add an event to and type in whatever event they have to schedule. When they click on the save button, the information they have added is saved to local storage, so that the information persists when the page is refreshed or navigated away from. When the page loads, the saved information is displayed in the appropriate time block.
 
-Screenshot: ![alt text](assets/images/screenshot.png)
+Screenshot: ![Screenshot of page at 10:45 am on Mon. Oct. 17](./Work%20Day%20Scheduler%20App%20Page.png)
 
 URL: []()
 
